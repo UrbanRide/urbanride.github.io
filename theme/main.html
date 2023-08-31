@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{%- block htmltitle %}
+    <title>
+        {% if page and page.title and not page.is_homepage %}
+            {{ page.title }} – {{ config.site_name }}
+        {% elif page.is_homepage %}
+            {{ config.site_name }} – {{ config.site_description }}
+        {% else %}
+            {{ page.title }}
+        {% endif %}
+    </title>
+{%- endblock %}
+
+{%- block site_name %}
+    <a class="navbar-brand" href="{{ nav.homepage.url|url }}">
+        {% if page.is_homepage %}
+            {% include "images/logo_full.svg" %}
+            <small>{{ config.site_description }}</small>
+            {% else %}
+            {% include "images/logo.svg" %}
+            <small>{{ config.site_name }}</small>
+        {% endif %}
+    </a>
+{%- endblock %}
+
+{% block next_prev %}
+    {# Disable #}
+{% endblock %}
+
+{% block content %}
+    {% if page.meta.full_width %}
+        <div class="col" role="main">{% include "content.html" %}</div>
+    {% else %}
+        <div class="col-md-9" role="main">{% include "content.html" %}</div>
+        {% if page.meta.show_toc %}
+            <div class="col-md-3">{% include "toc.html" %}</div>
+        {% endif %}
+    {% endif %}
+{% endblock %}
+
+{% block footer %}
+    <div class="container">
+        <hr>
+        <p>
+            <a href="https://www.bristol.ac.uk/golding/">
+                <img src="{{ "images/uob.png"|url }}" alt="University of Bristol">
+            </a>
+        </p>
+        <p>
+            Project timeline: February 2023 – July 2024.<br>
+            The Urban Ride Research project is funded by the <a href="https://www.bristol.ac.uk/news/2021/september/open-research-funding.html">Research England Policy Support Fund</a>.
+        </p>
+    </div>
+{% endblock %}
