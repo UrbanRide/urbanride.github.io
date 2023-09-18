@@ -14,12 +14,9 @@
 
 {%- block site_name %}
     <a class="navbar-brand" href="{{ nav.homepage.url|url }}">
+        {% include "images/logo.svg" %}
         {% if page.is_homepage %}
-            {% include "images/logo_full.svg" %}
             <small>{{ config.site_description }}</small>
-            {% else %}
-            {% include "images/logo.svg" %}
-            <small>{{ config.site_name }}</small>
         {% endif %}
     </a>
 {%- endblock %}
