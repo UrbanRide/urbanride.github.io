@@ -21,23 +21,15 @@ body {
 .navbar-brand img,
 .navbar-brand svg {
     width: auto;
-    height: 40px;
+    height: 100px;
     max-width: 100%;
 }
 
 .navbar-brand small {
     display: block;
-    margin-top: 5px;
     white-space: normal;
-}
-
-body.homepage .navbar-brand img,
-body.homepage .navbar-brand svg {
-    height: 80px;
-}
-
-body.homepage .navbar-brand small {
     font-size: 1em;
+    margin: 0.1rem 0 0.5rem;
 }
 
 .nav.navbar-nav {
