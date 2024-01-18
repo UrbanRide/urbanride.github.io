@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://rideresearch.github.io/</loc>
-         <lastmod>2023-09-22</lastmod>
+         <loc>https://www.urbanride.uk/</loc>
+         <lastmod>2024-01-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://rideresearch.github.io/team/</loc>
-         <lastmod>2023-09-22</lastmod>
+         <loc>https://www.urbanride.uk/about/</loc>
+         <lastmod>2024-01-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.urbanride.uk/team/</loc>
+         <lastmod>2024-01-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
