@@ -1,13 +1,13 @@
 site_name: Urban Ride Research
-#site_url: https://www.rideresearch.uk/
-site_url: https://rideresearch.github.io/
+site_url: https://www.urbanride.uk/
 site_description: Developing micromobility data sharing for research and public benefit
 site_author: Urban Ride Research
 site_favicon: images/favicon.png
 
 nav:
     - Home: index.md
-    - Team: team.md
+    - About: about.md
+    - Team and Contacts: team.md
 
 theme:
     name: yeti
