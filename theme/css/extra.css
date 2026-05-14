@@ -32,12 +32,8 @@ body {
     margin: 0.1rem 0 0.5rem;
 }
 
-.nav.navbar-nav {
-    margin-left: auto;
-}
-
-.nav.navbar-nav.ml-auto {
-    margin-left: 0 !important;
+.navbar-collapse {
+    justify-content: end;
 }
 
 .nav.navbar-nav .nav-link {
